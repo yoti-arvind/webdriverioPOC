@@ -1,3 +1,8 @@
+
+const config = require('./../../wdio.conf').config;
+
+const MyURL = config.baseUrl;
+
 /**
 * main page object containing all methods, selectors and functionality
 * that is shared across all page objects
@@ -10,6 +15,7 @@ module.exports = class Page {
     open (path) {
         //browser.maximizeWindow(); moved to config
         //browser.fullscreenWindow();
-        return browser.url(`https://the-internet.herokuapp.com/${path}`)
+        // return browser.url(`https://the-internet.herokuapp.com/${path}`)
+       return browser.url(MyURL+`/${path}`);
     }
 }
