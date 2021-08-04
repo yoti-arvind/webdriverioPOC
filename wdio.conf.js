@@ -2,7 +2,7 @@ const urls = require("./urls");
 
 const ENV = process.env.ENV;
 
-if(!ENV || !['qa', 'dev','staging'].includes(ENV)){
+if(!ENV || !['dev', 'staging','prod'].includes(ENV)){
     console.log('Please use the following format when running the test script: ENV=qa|dev|staging');
     process.exit();
 }
