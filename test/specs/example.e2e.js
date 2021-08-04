@@ -67,21 +67,12 @@ describe('Add remove element test cases', () => {
     it('Adding element in the page', async() => {
         await AddRemoveElemetsPage.open();
         const clickAddElementBtn = await AddRemoveElemetsPage.addElement;
-       // const clickDiplayed = clickAddElementBtn.waitAnd
-        // await waitAndClick(clickAddElementBtn, 5000);
         await browser.pause(5000);
         for(let clickButton = 0; clickButton < 5; clickButton++){
             clickAddElementBtn.click()
             console.log(clickButton);
             await browser.pause(5000);
         }
-        /* reference code
-        clickAddElementBtn.click();
-        await browser.pause(5000);
-        await browser.pause(5000);
-        clickAddElementBtn.click();
-        await browser.pause(5000);
-        */
         const deleteBtn = await AddRemoveElemetsPage.deleteElement;
         let ButtonDisplayed = deleteBtn.waitForDisplayed({ timeout: 5000});
         //await expect(AddRemoveElemetsPage.deleteElement).toBeElementsArrayOfSize( { gte: 1} );
