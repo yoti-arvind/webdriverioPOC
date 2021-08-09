@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Drag and Drop cases" timestamp="2021-08-09T14:12:35" time="13.314" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Drag and Drop cases"/>
+      <property name="capabilities" value="chrome.92_0_4515_131.macosx"/>
+      <property name="file" value="./test/specs/DragAndDrop.js"/>
+    </properties>
+    <testcase classname="chrome.92_0_4515_131.macosx.Drag and Drop cases" name="drag component A and drop on B component" time="13.296">
+      <system-out><![CDATA[
+COMMAND: POST /session/f6c5a5b88496fbcac03e9494ca05873e/window/maximize - {}
+COMMAND: POST /session/f6c5a5b88496fbcac03e9494ca05873e/url - {"url":"https://the-internet.herokuapp.com//drag_and_drop"}
+RESULT: {}
+RESULT: {"url":"https://the-internet.herokuapp.com//drag_and_drop"}
+COMMAND: POST /session/f6c5a5b88496fbcac03e9494ca05873e/element - {"using":"css selector","value":"#column-a"}
+RESULT: {"using":"css selector","value":"#column-a"}
+COMMAND: POST /session/f6c5a5b88496fbcac03e9494ca05873e/element - {"using":"css selector","value":"#column-b"}
+RESULT: {"using":"css selector","value":"#column-b"}
+COMMAND: GET /session/f6c5a5b88496fbcac03e9494ca05873e/element/1e3b8337-c323-499a-87e1-c18808d4cc0d/rect - {}
+RESULT: {}
+COMMAND: GET /session/f6c5a5b88496fbcac03e9494ca05873e/element/1e3b8337-c323-499a-87e1-c18808d4cc0d/rect - {}
+RESULT: {}
+COMMAND: POST /session/f6c5a5b88496fbcac03e9494ca05873e/actions - {"actions":[{"type":"pointer","id":"finger1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"12d101bc-40d3-4e2a-b9d8-dc56fcb517b9"},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pause","duration":10},{"type":"pointerMove","duration":10,"origin":"pointer","x":450,"y":87},{"type":"pointerUp","button":0}]}]}
+RESULT: {"actions":[{"type":"pointer","id":"finger1","parameters":{"pointerType":"mouse"},"actions":[{"type":"pointerMove","duration":0,"origin":{"element-6066-11e4-a52e-4f735466cecf":"12d101bc-40d3-4e2a-b9d8-dc56fcb517b9"},"x":0,"y":0},{"type":"pointerDown","button":0},{"type":"pause","duration":10},{"type":"pointerMove","duration":10,"origin":"pointer","x":450,"y":87},{"type":"pointerUp","button":0}]}]}
+COMMAND: DELETE /session/f6c5a5b88496fbcac03e9494ca05873e/actions - {}
+RESULT: {}
+COMMAND: DELETE /session/f6c5a5b88496fbcac03e9494ca05873e - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

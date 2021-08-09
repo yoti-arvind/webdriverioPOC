@@ -33,10 +33,10 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-         './test/specs/**/*.js'
+        './test/specs/**/*.js'
         //'./test/specs/**/DragAndDrop.js'
         //'./test/specs/**/DropDownList.js'
-        // './test/specs/**/modal.js'
+         //'./test/specs/**/modal.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -127,6 +127,7 @@ exports.config = {
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
     services: ['chromedriver'],
+    //services: ['selenium-standalone'],
     
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -148,7 +149,9 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec',['allure', {outputDir: 'allure-results'}]],
+    reporters: ['spec',['allure', {outputDir: 'allure-results'}],['junit', {
+        outputDir: './report'
+    }]],
 
 
     

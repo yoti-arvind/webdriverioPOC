@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Modals exampleas" timestamp="2021-08-09T14:12:35" time="7.556" tests="3" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Modals exampleas"/>
+      <property name="capabilities" value="chrome.92_0_4515_131.macosx"/>
+      <property name="file" value="./test/specs/modal.js"/>
+    </properties>
+    <testcase classname="chrome.92_0_4515_131.macosx.Modals exampleas" name="Auto modal open on page visit examples" time="3.883">
+      <system-out><![CDATA[
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/url - {"url":"https://the-internet.herokuapp.com//entry_ad"}
+RESULT: {"url":"https://the-internet.herokuapp.com//entry_ad"}
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/window/maximize - {}
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/element - {"using":"xpath","value":"//*[contains(text(),'This is a modal window')]"}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//*[contains(text(),'This is a modal window')]"}
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"6fbc1212-25ab-4498-969a-58df8b520bac","ELEMENT":"6fbc1212-25ab-4498-969a-58df8b520bac"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"6fbc1212-25ab-4498-969a-58df8b520bac","ELEMENT":"6fbc1212-25ab-4498-969a-58df8b520bac"}]}
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"6fbc1212-25ab-4498-969a-58df8b520bac","ELEMENT":"6fbc1212-25ab-4498-969a-58df8b520bac"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"6fbc1212-25ab-4498-969a-58df8b520bac","ELEMENT":"6fbc1212-25ab-4498-969a-58df8b520bac"}]}
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/element - {"using":"xpath","value":"//*[contains(text(),'This is a modal window')]"}
+RESULT: {"using":"xpath","value":"//*[contains(text(),'This is a modal window')]"}
+COMMAND: GET /session/ce8776c4613920ad0bdad385c390e5b4/element/6fbc1212-25ab-4498-969a-58df8b520bac/text - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.92_0_4515_131.macosx.Modals exampleas" name="Close the model which is opened on page visit" time="1.051">
+      <system-out><![CDATA[
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/url - {"url":"https://the-internet.herokuapp.com//entry_ad"}
+RESULT: {"url":"https://the-internet.herokuapp.com//entry_ad"}
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/window/maximize - {}
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/element - {"using":"xpath","value":"//*[contains(text(),'click here')]"}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//*[contains(text(),'click here')]"}
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"cf1c8faa-0be0-4573-bc83-76d337585946","ELEMENT":"cf1c8faa-0be0-4573-bc83-76d337585946"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"cf1c8faa-0be0-4573-bc83-76d337585946","ELEMENT":"cf1c8faa-0be0-4573-bc83-76d337585946"}]}
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/element/cf1c8faa-0be0-4573-bc83-76d337585946/click - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.92_0_4515_131.macosx.Modals exampleas" name="Reopoen the model and close the" time="2.606">
+      <system-out><![CDATA[
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/url - {"url":"https://the-internet.herokuapp.com//entry_ad"}
+RESULT: {"url":"https://the-internet.herokuapp.com//entry_ad"}
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/window/maximize - {}
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/element - {"using":"xpath","value":"//*[contains(text(),'click here')]"}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//*[contains(text(),'click here')]"}
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"c6d3b236-1899-4254-9e15-8f7d62fb1cc3","ELEMENT":"c6d3b236-1899-4254-9e15-8f7d62fb1cc3"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"c6d3b236-1899-4254-9e15-8f7d62fb1cc3","ELEMENT":"c6d3b236-1899-4254-9e15-8f7d62fb1cc3"}]}
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/element/c6d3b236-1899-4254-9e15-8f7d62fb1cc3/click - {}
+RESULT: {}
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/element - {"using":"xpath","value":"//*[@id='content']/div[1]/p[3]/a"}
+RESULT: {"using":"xpath","value":"//*[@id='content']/div[1]/p[3]/a"}
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"506099e5-2c20-43a2-8463-9a8ad01c1cfc","ELEMENT":"506099e5-2c20-43a2-8463-9a8ad01c1cfc"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"506099e5-2c20-43a2-8463-9a8ad01c1cfc","ELEMENT":"506099e5-2c20-43a2-8463-9a8ad01c1cfc"}]}
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/element/506099e5-2c20-43a2-8463-9a8ad01c1cfc/click - {}
+RESULT: {}
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/refresh - {}
+RESULT: {}
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/element - {"using":"xpath","value":"//*[contains(text(),'click here')]"}
+RESULT: {"using":"xpath","value":"//*[contains(text(),'click here')]"}
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ddde12d9-f689-458e-a028-4af6282cdc54","ELEMENT":"ddde12d9-f689-458e-a028-4af6282cdc54"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"ddde12d9-f689-458e-a028-4af6282cdc54","ELEMENT":"ddde12d9-f689-458e-a028-4af6282cdc54"}]}
+COMMAND: POST /session/ce8776c4613920ad0bdad385c390e5b4/element/ddde12d9-f689-458e-a028-4af6282cdc54/click - {}
+RESULT: {}
+COMMAND: DELETE /session/ce8776c4613920ad0bdad385c390e5b4 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

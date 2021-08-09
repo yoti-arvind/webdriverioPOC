@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Drop Down test cases" timestamp="2021-08-09T14:12:35" time="3.625" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Drop Down test cases"/>
+      <property name="capabilities" value="chrome.92_0_4515_131.macosx"/>
+      <property name="file" value="./test/specs/DropDownList.js"/>
+    </properties>
+    <testcase classname="chrome.92_0_4515_131.macosx.Drop Down test cases" name="select first value from the drop down" time="3.618">
+      <system-out><![CDATA[
+COMMAND: POST /session/d38a32b986d2e989ca17e83e3e8f2e92/window/maximize - {}
+COMMAND: POST /session/d38a32b986d2e989ca17e83e3e8f2e92/url - {"url":"https://the-internet.herokuapp.com//dropdown"}
+RESULT: {}
+RESULT: {"url":"https://the-internet.herokuapp.com//dropdown"}
+COMMAND: POST /session/d38a32b986d2e989ca17e83e3e8f2e92/element - {"using":"css selector","value":"#dropdown"}
+RESULT: {"using":"css selector","value":"#dropdown"}
+COMMAND: POST /session/d38a32b986d2e989ca17e83e3e8f2e92/execute/sync - {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f3df8f56-5f4a-41e7-95a4-08909b26d24b","ELEMENT":"f3df8f56-5f4a-41e7-95a4-08909b26d24b"}]}
+RESULT: {"script":"return (function isElementDisplayed(element) {\n    function nodeIsElement(node) {\n        if (!node) {\n            return false;\n        }\n        switch (node.nodeType) {\n            case Node.ELEMEN ... (7762 more bytes)","args":[{"element-6066-11e4-a52e-4f735466cecf":"f3df8f56-5f4a-41e7-95a4-08909b26d24b","ELEMENT":"f3df8f56-5f4a-41e7-95a4-08909b26d24b"}]}
+COMMAND: POST /session/d38a32b986d2e989ca17e83e3e8f2e92/element/f3df8f56-5f4a-41e7-95a4-08909b26d24b/element - {"using":"xpath","value":"./option[. = \"Option 2\"]|./option[normalize-space(text()) = \"Option 2\"]|./optgroup/option[. = \"Option 2\"]|./optgroup/option[normalize-space(text()) = \"Option 2\"]"}
+RESULT: {"using":"xpath","value":"./option[. = \"Option 2\"]|./option[normalize-space(text()) = \"Option 2\"]|./optgroup/option[. = \"Option 2\"]|./optgroup/option[normalize-space(text()) = \"Option 2\"]"}
+COMMAND: POST /session/d38a32b986d2e989ca17e83e3e8f2e92/element/a8dae7e1-1b40-4482-a3a9-e3b8f8e3e59b/click - {}
+RESULT: {}
+COMMAND: DELETE /session/d38a32b986d2e989ca17e83e3e8f2e92 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
