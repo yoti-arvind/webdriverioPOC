@@ -18,3 +18,9 @@ Jenkin Instalation steps on Mac(Precondition: homebrew should be installed):
 4. Restart the Jenkins service: brew services restart jenkins-lts
 5. Update the Jenkins version: brew upgrade jenkins-lts
 
+Create a custom app in you Gmail security settings.(Important for jenkins email notification support)
+1. Log-in into Gmail with your account
+2. Navigate to https://security.google.com/settings/security/apppasswords
+3. In 'select app' choose 'custom', give it an arbitrary name and press generate
+4. It will give you 16 chars token.
+
