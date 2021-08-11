@@ -11,7 +11,7 @@ Steps to install:
 5. Add Junit support - refer https://webdriver.io/docs/jenkins/
 
 
-jernkins Instalation steps on Mac(Precondition: homebrew should be installed):
+Jenkin Instalation steps on Mac(Precondition: homebrew should be installed):
 1. Install the latest LTS version: brew install jenkins-lts
 2. Install a specific LTS version: brew install jenkins-lts@YOUR_VERSION (for specific version of jenkin)
 3. Start the Jenkins service: brew services start jenkins-lts
