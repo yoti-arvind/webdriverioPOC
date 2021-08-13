@@ -25,6 +25,6 @@ Create a custom app in you Gmail security settings.(Important for jenkins email 
 4. It will give you 16 chars token. 
 
 
-Jenkin Git integrations auto commit/push
+Jenkin Git integrations auto commit/push job
 
 
