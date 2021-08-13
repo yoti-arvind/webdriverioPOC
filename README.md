@@ -22,5 +22,9 @@ Create a custom app in you Gmail security settings.(Important for jenkins email 
 1. Log-in into Gmail with your account
 2. Navigate to https://security.google.com/settings/security/apppasswords
 3. In 'select app' choose 'custom', give it an arbitrary name and press generate
-4. It will give you 16 chars token.
+4. It will give you 16 chars token. 
+
+
+Jenkin Git integration
+
 
