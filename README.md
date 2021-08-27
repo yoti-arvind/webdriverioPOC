@@ -24,4 +24,5 @@ Create a custom app in you Gmail security settings.(Important for jenkins email 
 3. In 'select app' choose 'custom', give it an arbitrary name and press generate
 4. It will give you 16 chars token. 
 
-Achived trigger pipeline on push event
+1 Achived trigger pipeline on push event
+2 Achived trigger pipeline on push event 
